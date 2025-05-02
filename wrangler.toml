@@ -1,0 +1,8 @@
+name = "forgithub_npm"
+compatibility_date = "2025-05-02"
+dev.port = 3000
+main = "main.ts"
+
+routes = [
+  { pattern = "npm.forgithub.com", custom_domain = true }
+]

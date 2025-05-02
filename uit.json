@@ -1,0 +1,20 @@
+{
+  "$schema": "https://uuithub.com/plugins.schema.json",
+  "description": "This can later be the source of truth for plugins, rather than centralised plugins.json file",
+  "plugins": {
+    "node_modules": {
+      "type": "ingest",
+      "domain": "github.com",
+      "description": "Resolves package info of required node_modules",
+      "endpoint": "https://npm.forgithub.com/{primarySourceSegment}/node_modules/{secondarySourceSegment}/{basePath}",
+      "source": "https://github.com/janwilmake/forgithub.npm"
+    },
+    "dependencies": {
+      "type": "ingest",
+      "domain": "github.com",
+      "description": "Gets package info and readme for package.json dependencies",
+      "endpoint": "https://npm.forgithub.com/{primarySourceSegment}/dependencies/{secondarySourceSegment}/{basePath}",
+      "source": "https://github.com/janwilmake/forgithub.npm"
+    }
+  }
+}
