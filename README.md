@@ -6,7 +6,7 @@ AI Coding Models hallucinate on the contents of packages. It does not use any co
 
 Features:
 
-- `/owner/repo[/node_modules]` - get file object that contains all node_modules or just 1 layer of dependencies. for the 1 layer, it includes readme files as well (if present). Resolves only from npmjs registry without looking at the tarfile yet.
+- `/owner/repo[/node_modules][/branch][/...basePath]` - get file object that contains all node_modules or just 1 layer of dependencies. for the 1 layer, it includes readme files as well (if present). Resolves only from npmjs registry without looking at the tarfile yet.
 
 Goals:
 
