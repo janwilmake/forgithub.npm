@@ -1,6 +1,6 @@
 {
   "$schema": "https://uuithub.com/plugins.schema.json",
-  "description": "This can later be the source of truth for plugins, rather than centralised plugins.json file",
+  "$comment": "This can later be the source of truth for plugins, rather than centralised plugins.json file",
   "plugins": {
     "node_modules": {
       "type": "ingest",
